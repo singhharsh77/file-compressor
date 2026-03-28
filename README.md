@@ -17,56 +17,43 @@ Huffman Coding is a **greedy algorithm** that compresses data losslessly using a
 On decompression, the tree is reconstructed from a stored frequency table in the file header, and the original bytes are decoded bit-by-bit.
 
 ---
+# Huffman File Compressor (DSA Project)
 
-## 🗂 Project Structure
+A high-performance, lossless binary file compressor using Huffman Coding. Features a premium React frontend and a robust Java/Node.js backend.
 
-```
-file-compressor/
-├── backend/
-│   ├── Huffman.java     ← Core DSA logic (compress & decompress)
-│   ├── server.js        ← Express API server (calls the Java binary)
-│   └── package.json
-└── frontend/
-    ├── src/
-    │   ├── App.js       ← React UI (upload, compress/decompress, download)
-    │   └── App.css      ← Glassmorphism / animated design
-    └── package.json
-```
+## ✨ Features
+- **Lossless Compression**: Perfect for text and binary data.
+- **Dual Backend**: High-speed Java implementation with an automatic JavaScript fallback.
+- **Premium UI**: Modern dark-mode interface with glassmorphism and smooth animations.
+- **Real-time Stats**: Displays original size, compressed size, and space saved percentage.
+- **Edge Case Robustness**: Correctly handles single-character, empty, and large files.
 
----
+## 🚀 Getting Started
 
-## 🚀 Running Locally
+### Backend Setup
+1. `cd backend`
+2. `npm install`
+3. `node server.js`
+   - The server will run on `http://localhost:5001`.
+   - It will automatically compile `Huffman.java` on startup.
 
-### Prerequisites
-- **Node.js** (v16+)
-- **Java** (JDK 11+)
+### Frontend Setup
+1. `cd frontend`
+2. `npm install`
+3. `npm start`
+   - The React app will run on `http://localhost:3000`.
 
-### 1. Start the Backend
-```bash
-cd backend
-npm install
-node server.js
-```
-The server runs at `http://localhost:5000` and auto-compiles `Huffman.java` on startup.
+## 🛠️ Tech Stack
+- **Frontend**: React.js, Vanilla CSS (Premium Glassmorphism).
+- **Backend**: Node.js, Express.
+- **Core Logic**: Java (Huffman Coding), JavaScript (Fallback Support).
 
-### 2. Start the Frontend
-```bash
-cd frontend
-npm install
-npm start
-```
-Visit `http://localhost:3000` in your browser.
-
----
-
-## 🔌 API Endpoints
-
+## 📄 License
+ISC
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `POST` | `/compress` | Upload any file → returns `.huff` compressed file |
 | `POST` | `/decompress` | Upload a `.huff` file → returns the original file |
-
----
 
 ## ⚙️ Tech Stack
 
