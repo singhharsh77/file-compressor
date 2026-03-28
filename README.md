@@ -3,6 +3,10 @@
 A lossless file compressor & decompressor built as a **DSA project** using the **Huffman Coding** algorithm. Supports any file type — images, PDFs, videos, zip files, and more.
 
 ---
+## OutPut
+<img width="1438" height="780" alt="Screenshot 2026-03-28 at 5 55 58 PM" src="https://github.com/user-attachments/assets/ce5b71c3-20be-44b3-81a1-491d4feb0de3" />
+<img width="1440" height="777" alt="Screenshot 2026-03-28 at 5 56 09 PM" src="https://github.com/user-attachments/assets/74fbf86d-3583-4a8a-82c1-512321ae1d47" />
+
 
 ## 🧠 How It Works (DSA)
 
